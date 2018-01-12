@@ -75,7 +75,6 @@ public class Practice11PieChartView extends View {
         canvas.drawText("Marshmallow", mStartX - offset + Util.dpToPx(context, 56), mStartY + offset, paint);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
             paint.setColor(Color.parseColor("#EE2B2A"));
             canvas.drawArc(LollipopPointX - radius, LollipopPointY - radius, LollipopPointX + radius, LollipopPointY + radius, -180, 120, true, paint);
 
@@ -93,8 +92,6 @@ public class Practice11PieChartView extends View {
 
             paint.setColor(Color.parseColor("#1E80F0"));
             canvas.drawArc(centerX - radius, centerY - radius, centerX + radius, centerY + radius, 35, 145, true, paint);
-
-
         }
     }
 }
